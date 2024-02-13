@@ -1,0 +1,6 @@
+﻿  CzupajlosPercentageSort.cpp
+C:\Users\stasi\Desktop\CzupajlosPercentageSort\CzupajlosPercentageSort.cpp(44,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\stasi\Desktop\CzupajlosPercentageSort\CzupajlosPercentageSort.cpp(64,20): warning C4101: 'temp2': unreferenced local variable
+C:\Users\stasi\Desktop\CzupajlosPercentageSort\CzupajlosPercentageSort.cpp(237,18): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
+C:\Users\stasi\Desktop\CzupajlosPercentageSort\CzupajlosPercentageSort.cpp(238,19): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  CzupajlosPercentageSort.vcxproj -> C:\Users\stasi\Desktop\CzupajlosPercentageSort\x64\Debug\CzupajlosPercentageSort.exe
