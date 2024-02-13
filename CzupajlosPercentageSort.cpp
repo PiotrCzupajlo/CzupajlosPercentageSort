@@ -1,6 +1,7 @@
 ﻿// Author: Piotr Czupajlo
 // CzupajlosPercentageSort
-
+// CzupajlosPercentageSort © 2024 by Piotr Czupajło is licensed under CC BY-NC 4.0.
+// To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
 #include <iostream>
 constexpr size_t n = 1000;
 using namespace std;
@@ -34,7 +35,7 @@ double* CzupajlosPercentageSort(int ints[]) {
         results[i][0] = max + 1;
         results[i][1] = 0;
     }
-
+    //setting the 2d array
     int counterdown = n / 2;
     int counterup = n - counterdown;
 
@@ -52,6 +53,7 @@ double* CzupajlosPercentageSort(int ints[]) {
 
 
         }
+        //if nothing stands on its position
         else {
 
             bool isempty = false;
@@ -67,6 +69,7 @@ double* CzupajlosPercentageSort(int ints[]) {
             {
                 results[position][1]++;
             }
+            //if its the same number it increase the second dimension
             else
             {
 
@@ -91,7 +94,7 @@ double* CzupajlosPercentageSort(int ints[]) {
 
                     }
                 }
-
+                //searching for proper position while going down
                 else
                 {
 
@@ -110,6 +113,7 @@ double* CzupajlosPercentageSort(int ints[]) {
                         }
                     }
                 }
+                //searching for proper position while going up
                 if (doineed == true)
                 {
                     x2 = x;
@@ -134,6 +138,7 @@ double* CzupajlosPercentageSort(int ints[]) {
                         }
                         z++;
                     }
+                    //searching for nearest placeholder
                     if (isempty == false)
                     {
                         if (emptyposition - z < 0)
@@ -171,6 +176,7 @@ double* CzupajlosPercentageSort(int ints[]) {
 
                         }
                     }
+                    //pushing everything up
                     else
                     {
                         correct = false;
@@ -202,6 +208,7 @@ double* CzupajlosPercentageSort(int ints[]) {
                         }
 
                     }
+                    //pushing everything down
 
 
 
@@ -225,7 +232,7 @@ double* CzupajlosPercentageSort(int ints[]) {
         }
     }
     return values;
-
+    //decoding the array
 }
 int main()
 {
@@ -245,3 +252,5 @@ int main()
 
 // Author: Piotr Czupajlo
 // CzupajlosPercentageSort
+// CzupajlosPercentageSort © 2024 by Piotr Czupajło is licensed under CC BY-NC 4.0.
+// To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
