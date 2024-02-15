@@ -36,8 +36,7 @@ double* CzupajlosPercentageSort(int ints[]) {
         results[i][1] = 0;
     }
     //setting the 2d array
-    int counterdown = n / 2;
-    int counterup = n - counterdown;
+
 
     for (int i = 0; i < n; i++)
     {
@@ -47,9 +46,7 @@ double* CzupajlosPercentageSort(int ints[]) {
         {
             results[position][0] = ints[i];
             results[position][1] = 1;
-            if (position > n / 2)
-                counterup--;
-            else counterdown--;
+
 
 
         }
@@ -156,12 +153,7 @@ double* CzupajlosPercentageSort(int ints[]) {
                                 results[x][0] = temp;
                                 results[x][1] = temp3;
                                 correct = true;
-                                if (x > n / 2)
-                                    counterup--;
-                                else
-                                {
-                                    counterdown--;
-                                }
+
                             }
                             else
                             {
@@ -187,9 +179,6 @@ double* CzupajlosPercentageSort(int ints[]) {
                                 results[x2][0] = temp;
                                 results[x2][1] = temp3;
                                 correct = true;
-                                if (x2 > n / 2)
-                                    counterup--;
-                                else counterdown--;
 
                             }
                             else
