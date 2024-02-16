@@ -22,13 +22,9 @@ double* CzupajlosPercentageSort(int ints[]) {
 
     }
 
-    double section = max;
-    if (min < 0)
-    {
-        section = max - min;
-    }
+    double section = max-min;
 
-    double doublemin = min;
+
     double results[n][2];
     for (int i = 0; i < n; i++)
     {
@@ -157,11 +153,8 @@ double* CzupajlosPercentageSort(int ints[]) {
                             }
                             else
                             {
-                                if (temp < results[x][0])
-                                {
-                                    swap(temp, results[x][0]);
-                                    swap(temp3, results[x][1]);
-                                }
+                                swap(temp, results[x][0]);
+                                swap(temp3, results[x][1]);
                                 x++;
                             }
 
@@ -183,13 +176,9 @@ double* CzupajlosPercentageSort(int ints[]) {
                             }
                             else
                             {
-                                if (temp >= results[x2][0])
-                                {
-                                    swap(temp, results[x2][0]);
-                                    swap(temp3, results[x2][1]);
-                                }
+                                swap(temp, results[x2][0]);
+                                swap(temp3, results[x2][1]);
                                 x2--;
-
                             }
 
 
