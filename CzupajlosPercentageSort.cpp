@@ -116,7 +116,7 @@ double* CzupajlosPercentageSort(int ints[]) {
                     int z = 0;
                     isempty = false;
                     correct = false;
-                    int counterdirection = 0;
+                    int counterdirection = 1;
                     while (isempty == false && emptyposition - z >= 0 && emptyposition + z < n)
                     {
                         if (results[emptyposition + z][0] == max + 1)
@@ -132,12 +132,9 @@ double* CzupajlosPercentageSort(int ints[]) {
                         z++;
                     }
                     //searching for nearest placeholder
-                    if (isempty == false)
+                    if (isempty == false && emptyposition+z==n)
                     {
-                        if (emptyposition - z < 0)
-                            counterdirection = 1;
-                        else
-                            counterdirection = -1;
+                        counterdirection = -1;
                     }
 
                     if (counterdirection == 1)
@@ -217,13 +214,20 @@ int main()
     int ints[n];
 
 
-    for (int i = 0;i < n;i++)
-    {
-        double z = rand() % n;
-        ints[i] = z;
+        for (int i = 0;i < n;i++)
+        {
+            double z = rand() % n;
+            ints[i] = z;
 
-    }
-    double* ptr = CzupajlosPercentageSort(ints);
+        }
+        double* ptr = CzupajlosPercentageSort(ints);
+        for (int i = 0;i < n;i++)
+        {
+            cout << ptr[i] << "\n";
+        
+        }
+
+    
     cout << "CPS!";
 
 }
