@@ -51,12 +51,8 @@ double* CzupajlosPercentageSort(int ints[]) {
 
             bool isempty = false;
             int emptyposition = 0;
-            bool correct = false;
-            int j = 0;
             int x = 0;
-            int x2 = 0;
             double temp;
-            double temp2;
             double temp3;
             if (results[position][0] == ints[i])
             {
@@ -109,13 +105,11 @@ double* CzupajlosPercentageSort(int ints[]) {
                 //searching for proper position while going up
                 if (doineed == true)
                 {
-                    x2 = x;
                     temp = ints[i];
                     temp3 = 1;
                     emptyposition = x;
                     int z = 0;
                     isempty = false;
-                    correct = false;
                     int counterdirection = 1;
                     while (isempty == false && emptyposition - z >= 0 && emptyposition + z < n)
                     {
@@ -139,19 +133,21 @@ double* CzupajlosPercentageSort(int ints[]) {
 
                     if (counterdirection == 1)
                     {
-                        while (correct == false && x < n)
+                        while (x < n)
                         {
                             if (results[x][0] == max + 1)
                             {
                                 results[x][0] = temp;
                                 results[x][1] = temp3;
-                                correct = true;
-
+                                break;
                             }
                             else
                             {
-                                swap(temp, results[x][0]);
-                                swap(temp3, results[x][1]);
+                                if (temp < results[x][0])
+                                {
+                                    swap(temp, results[x][0]);
+                                    swap(temp3, results[x][1]);
+                                }
                                 x++;
                             }
 
@@ -161,21 +157,24 @@ double* CzupajlosPercentageSort(int ints[]) {
                     //pushing everything up
                     else
                     {
-                        correct = false;
-                        while (correct == false && x2 >= 0)
+                        while (x >= 0)
                         {
-                            if (results[x2][0] == max + 1)
+                            if (results[x][0] == max + 1)
                             {
-                                results[x2][0] = temp;
-                                results[x2][1] = temp3;
-                                correct = true;
+                                results[x][0] = temp;
+                                results[x][1] = temp3;
+                                break;
 
                             }
                             else
                             {
-                                swap(temp, results[x2][0]);
-                                swap(temp3, results[x2][1]);
-                                x2--;
+                                if (temp >= results[x][0])
+                                {
+                                    swap(temp, results[x][0]);
+                                    swap(temp3, results[x][1]);
+                                }
+
+                                x--;
                             }
 
 
@@ -214,6 +213,7 @@ int main()
     int ints[n];
 
 
+
         for (int i = 0;i < n;i++)
         {
             double z = rand() % n;
@@ -224,8 +224,9 @@ int main()
         for (int i = 0;i < n;i++)
         {
             cout << ptr[i] << "\n";
-        
+
         }
+    
 
     
     cout << "CPS!";
