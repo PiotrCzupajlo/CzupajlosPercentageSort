@@ -6,7 +6,8 @@ More about how it works in howitwork.docx
 
 Tests available on the branch tests.
 
-![image](https://github.com/PiotrCzupajlo/CzupajlosPercentageSort/assets/150134088/319f9c99-b039-47a5-bab6-8b9497806a73)
+![image](https://github.com/PiotrCzupajlo/CzupajlosPercentageSort/assets/150134088/8ad7790f-763a-4a71-aab5-2d15ed9187af)
+
 
 
 
