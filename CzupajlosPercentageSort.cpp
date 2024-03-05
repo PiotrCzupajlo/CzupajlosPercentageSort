@@ -3,11 +3,11 @@
 // CzupajlosPercentageSort © 2024 by Piotr Czupajło is licensed under CC BY-NC 4.0.
 // To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/
 #include <iostream>
-constexpr size_t n = 1000;
+constexpr size_t n = 10000;
 using namespace std;
 double* CzupajlosPercentageSort(int ints[]) {
     double max = ints[0];
-    double min = 0;
+    double min = ints[0];
 
 
     for (int i = 0; i < n; i++)

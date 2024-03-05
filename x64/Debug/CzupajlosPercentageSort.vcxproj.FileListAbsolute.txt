@@ -1,2 +1,3 @@
 C:\Users\stasi\Desktop\CzupajlosPercentageSort\x64\Debug\CzupajlosPercentageSort.exe
 C:\Users\stasi\Desktop\cpscpp\x64\Debug\CzupajlosPercentageSort.exe
+C:\Users\stasi\Desktop\sortowania\sort\x64\Debug\CzupajlosPercentageSort.exe
