@@ -1,6 +1,6 @@
 ﻿  CzupajlosPercentageSort.cpp
-C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(40,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(219,22): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
-C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(220,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-  LINK : C:\Users\stasi\Desktop\sortowania\sort\x64\Debug\CzupajlosPercentageSort.exe not found or not built by the last incremental link; performing full link
+C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(33,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(42,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(223,22): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
+C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(224,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   CzupajlosPercentageSort.vcxproj -> C:\Users\stasi\Desktop\sortowania\sort\x64\Debug\CzupajlosPercentageSort.exe
