@@ -1,6 +1,14 @@
 ﻿  CzupajlosPercentageSort.cpp
+<<<<<<< HEAD
 C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(33,26): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
 C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(42,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(223,22): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
 C:\Users\stasi\Desktop\sortowania\sort\CzupajlosPercentageSort.cpp(224,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   CzupajlosPercentageSort.vcxproj -> C:\Users\stasi\Desktop\sortowania\sort\x64\Debug\CzupajlosPercentageSort.exe
+=======
+C:\Users\stasi\Desktop\cpscpp\CzupajlosPercentageSort.cpp(39,22): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\stasi\Desktop\cpscpp\CzupajlosPercentageSort.cpp(198,38): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\stasi\Desktop\cpscpp\CzupajlosPercentageSort.cpp(214,22): warning C4244: 'initializing': conversion from 'size_t' to 'double', possible loss of data
+C:\Users\stasi\Desktop\cpscpp\CzupajlosPercentageSort.cpp(215,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  CzupajlosPercentageSort.vcxproj -> C:\Users\stasi\Desktop\cpscpp\x64\Debug\CzupajlosPercentageSort.exe
+>>>>>>> 10c520c (next update)
