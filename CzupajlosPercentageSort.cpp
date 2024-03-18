@@ -132,49 +132,70 @@ void CzupajlosPercentageSort(int ints[]) {
 
                     if (counterdirection == 1)
                     {
-                        while (x < n)
+                        if (results[x] == max + 1)
                         {
-                            if (results[x] == max + 1)
+                            results[x] = temp;
+                            results2[x] = temp3;
+                        }
+                        else
+                        {
+                            if (temp > results[x])
+                                x++;
+                            while (x < n)
                             {
-                                results[x] = temp;
-                                results2[x] = temp3;
-                                break;
-                            }
-                            else if (temp < results[x])
-                            {
-                                swap(temp, results[x]);
-                                swap(temp3, results2[x]);
+                                if (results[x] == max + 1)
+                                {
+                                    results[x] = temp;
+                                    results2[x] = temp3;
+                                    break;
+                                }
+                                else
+                                {
+                                    swap(temp, results[x]);
+                                    swap(temp3, results2[x]);
+
+                                }
+                                x++;
+
 
                             }
-                            x++;
-
-
                         }
                     }
                     //pushing everything up
                     else
                     {
 
-                        while (x >= 0)
+                        if (results[x] == max + 1)
                         {
-                            if (results[x] == max + 1)
-                            {
-                                results[x] = temp;
-                                results2[x] = temp3;
-                                break;
-
-                            }
-                            else if (temp >= results[x])
-                            {
-                                swap(temp, results[x]);
-                                swap(temp3, results2[x]);
-
-                            }
-                            x--;
-
-
-
+                            results[x] = temp;
+                            results2[x] = temp3;
                         }
+                        else
+                        {
+                            if (temp < results[x])
+                                x--;
+                            while (x >= 0)
+                            {
+                                if (results[x] == max + 1)
+                                {
+                                    results[x] = temp;
+                                    results2[x] = temp3;
+                                    break;
+
+                                }
+                                else
+                                {
+                                    swap(temp, results[x]);
+                                    swap(temp3, results2[x]);
+
+                                }
+                                x--;
+
+
+
+                            }
+                        }
+
 
                     }
                     //pushing everything down
