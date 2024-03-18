@@ -23,16 +23,8 @@ void CzupajlosPercentageSort(int ints[]) {
     }
 
     double section = max - min;
-<<<<<<< HEAD
-
-
-    int* results = new int[n];
-    short* results2 = new short[n];
-
-=======
     double* results = new double[n];
     double* results2 = new double[n];
->>>>>>> 10c520c (next update)
     for (int i = 0; i < n; i++)
     {
         results[i] = max + 1;
@@ -43,14 +35,6 @@ void CzupajlosPercentageSort(int ints[]) {
 
     for (int i = 0; i < n; i++)
     {
-<<<<<<< HEAD
-        double percentage = (ints[i] - min) / section;
-        int position = percentage * (n - 1);
-        if (results[position] == max + 1 || results[position] == ints[i])
-        {
-            results[position] = ints[i];
-            results2[position]++;
-=======
         double percentage = ((ints[i] - min) / section);
         int position = (percentage * (n - 1));
         if (results[position] == max + 1)
@@ -60,13 +44,10 @@ void CzupajlosPercentageSort(int ints[]) {
 
 
 
->>>>>>> 10c520c (next update)
         }
         //if nothing stands on its position
         else {
 
-<<<<<<< HEAD
-=======
             bool isempty = false;
             int emptyposition = 0;
             int x = 0;
@@ -76,53 +57,16 @@ void CzupajlosPercentageSort(int ints[]) {
             {
                 results2[position]++;
             }
->>>>>>> 10c520c (next update)
             //if its the same number it increase the second dimension
-            int x = 0;
-            bool doineed = true;
-            if (results[position] > ints[i])
-            {
-
-                for (int s = position; s >= 0; s--)
-                {
-                    if (ints[i] == results[s])
-                    {
-                        results2[s]++;
-                        doineed = false;
-                        s = -1;
-                    }
-                    else if (ints[i] > results[s] || s == 0 || results[s] == max + 1)
-                    {
-                        x = s;
-                        s = -1;
-
-                    }
-
-                }
-            }
-            //searching for proper position while going down
             else
             {
 
-<<<<<<< HEAD
-                for (int s = position; s < n; s++)
-=======
                 bool doineed = true;
                 if (results[position] > ints[i])
->>>>>>> 10c520c (next update)
                 {
-                    if (ints[i] == results[s])
+
+                    for (int s = position; s >= 0; s--)
                     {
-<<<<<<< HEAD
-                        results2[s]++;
-                        doineed = false;
-                        s = n + 1;
-                    }
-                    else if (ints[i] < results[s] || s == n - 1)
-                    {
-                        x = s;
-                        s = n + 1;
-=======
                         if (ints[i] == results[s])
                         {
                             results2[s]++;
@@ -136,25 +80,14 @@ void CzupajlosPercentageSort(int ints[]) {
 
                         }
 
->>>>>>> 10c520c (next update)
                     }
                 }
-            }
-            //searching for proper position while going up
-            if (doineed == true)
-            {
-                int temp = ints[i];
-                short temp3 = 1;
-                int z = 0;
-                bool isempty = false;
-                int counterdirection = -1;
-                if (x > n / 2)
+                //searching for proper position while going down
+                else
                 {
-                    while (isempty == false && x + z < n)
+
+                    for (int s = position; s < n; s++)
                     {
-<<<<<<< HEAD
-                        if (results[x + z] == max + 1)
-=======
                         if (ints[i] == results[s])
                         {
                             results2[s]++;
@@ -180,68 +113,27 @@ void CzupajlosPercentageSort(int ints[]) {
                     while (isempty == false && emptyposition - z >= 0 && emptyposition + z < n)
                     {
                         if (results[emptyposition + z] == max + 1)
->>>>>>> 10c520c (next update)
                         {
                             isempty = true;
                             counterdirection = 1;
-
                         }
-<<<<<<< HEAD
-                        else if (results[x - z] == max + 1)
-                        {
-                            isempty = true;
-                        }
-                        z++;
-                    }
-
-                }
-                else
-                {
-                    counterdirection = 1;
-                    while (isempty == false && x - z >= 0)
-                    {
-                        if (results[x + z] == max + 1)
-                        {
-                            isempty = true;
-
-                        }
-                        else if (results[x - z] == max + 1)
-=======
                         else if (results[emptyposition - z] == max + 1)
->>>>>>> 10c520c (next update)
                         {
                             isempty = true;
                             counterdirection = -1;
                         }
                         z++;
                     }
-<<<<<<< HEAD
-                }
-                //searching for nearest placeholder
-                if (counterdirection == 1)
-                {
-                    while (x < n)
-=======
                     //searching for nearest placeholder
                     if (isempty == false && emptyposition + z == n)
->>>>>>> 10c520c (next update)
                     {
-                        if (results[x] == max + 1)
+                        counterdirection = -1;
+                    }
+
+                    if (counterdirection == 1)
+                    {
+                        while (x < n)
                         {
-<<<<<<< HEAD
-                            results[x] = temp;
-                            results2[x] = temp3;
-                            x = n;
-                        }
-                        else
-                        {
-                            if (temp < results[x])
-                            {
-                                swap(temp, results[x]);
-                                swap(temp3, results2[x]);
-                            }
-                            x++;
-=======
                             if (results[x] == max + 1)
                             {
                                 results[x] = temp;
@@ -282,46 +174,15 @@ void CzupajlosPercentageSort(int ints[]) {
 
 
 
->>>>>>> 10c520c (next update)
                         }
-
 
                     }
-                }
-                //pushing everything up
-                else
-                {
-                    while (x >= 0)
-                    {
-                        if (results[x] == max + 1)
-                        {
-                            results[x] = temp;
-                            results2[x] = temp3;
-                            x = -1;
-
-                        }
-                        else
-                        {
-                            if (temp >= results[x])
-                            {
-                                swap(temp, results[x]);
-                                swap(temp3, results2[x]);
-                            }
-
-                            x--;
-                        }
+                    //pushing everything down
 
 
 
-                    }
 
                 }
-                //pushing everything down
-
-
-
-
-
 
 
             }
